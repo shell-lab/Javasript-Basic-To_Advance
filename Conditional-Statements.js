@@ -22,5 +22,16 @@ let isMarried = false;
  console.log(evennumber);
 
  //greet person base on gender
- 
- let PersonArray = ["Sameer" ,"Arjun"];
+ let PersonArray = ["Sameer", "Radha", "Arjun"];
+let genderArray = ["male", "female", "male"];
+let newArray = [];
+
+for (let x = 0; x < PersonArray.length; x++) {
+    if (genderArray[x] === "female") {
+         console.log("Mrs. "+PersonArray[x] );
+   }
+   else if (genderArray[x] === "male"){
+      console.log("Mr."+ PersonArray[x]);
+   }
+}
+
